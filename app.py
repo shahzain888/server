@@ -160,7 +160,7 @@ def cache_setex(key, ttl, value):
     cache[key] = (value, time.time() + ttl)
 
 # ---- YouTube API Config ----
-YOUTUBE_API_KEY = "AIzaSyA_kFB3npZFQ6qV3GirzPl9xHXySZFhMtI"
+YOUTUBE_API_KEY = "AIzaSyDTAQXdKQGjb6bsELXWU3ABG7vEBBDOeM8"
 SEARCH_URL = "https://www.googleapis.com/youtube/v3/search"
 VIDEO_URL = "https://www.googleapis.com/youtube/v3/videos"
 
