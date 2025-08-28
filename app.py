@@ -292,5 +292,9 @@ def get_play_url(video_id):
     except Exception as e:
         return jsonify({"error": str(e)}), 500
 
+# if __name__ == "__main__":
+#     app.run(host="0.0.0.0", port=5000, debug=True)
 if __name__ == "__main__":
-    app.run(host="0.0.0.0", port=5000, debug=True)
+    import os
+    port = int(os.environ.get("PORT", 5000))
+    app.run(host="0.0.0.0", port=port, debug=True)

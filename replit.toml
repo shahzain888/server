@@ -1,0 +1,13 @@
+run = "python3 main.py"
+
+[env]
+PYTHONUNBUFFERED = "1"
+
+[packager]
+  [packager.pip]
+  install = ["-r", "requirements.txt"]
+
+[deployment]
+# Expose port 5000 since Flask runs there
+  run = ["python3", "main.py"]
+  env = { PORT = "5000", HOST = "0.0.0.0" }
