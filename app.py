@@ -360,9 +360,7 @@ def get_play_url(video_id):
             "format": "best[ext=mp4]/best",
             "quiet": True,
             "noplaylist": True,
-            "force_ipv4": True,
-             "source_address": "192.168.88.3" 
-        }
+            "force_ipv4": True        }
 
         with yt_dlp.YoutubeDL(ydl_opts) as ydl:
             info = ydl.extract_info(video_url, download=False)
